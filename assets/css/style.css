@@ -25,14 +25,34 @@
         background-color: black;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         /* flex-wrap: wrap; */
-        align-items: center;
+        /* align-items: center; */
+    }
+
+    .aside-icon-top {
+        border: 1px solid lightsalmon;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .aside-icon-bottom {
+        border: 1px solid lightsalmon;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: end;
     }
 
     .aside-icon {
         border: 1px dotted white;
         width: 80%;
-        height: 4%;
+        height: 10%;
         margin: 20%;
     }
 
