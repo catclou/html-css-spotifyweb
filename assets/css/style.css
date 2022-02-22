@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+    color: white;
 }
 /* reset ends here */
 
@@ -62,12 +63,12 @@
         background-color: royalblue;
         display: flex;
         overflow-y: scroll;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
 
     header {
         height: 10vh;
-        width: 90vw;
+        width: 100%;
         background-color: blueviolet;
         display: flex;
         justify-content: end;
@@ -75,9 +76,11 @@
 
     button.upgrade {
         margin: 8% 1%;
+        background-color: black;
     }
 
     .genres-nav > ul {
+        width: 100%;
         border: 1px dashed white;
         display: flex;
         flex-wrap: wrap;
@@ -88,28 +91,62 @@
         list-style: none;
         border: 1px solid orange;
         display: inline;
-        margin:  2% 1%;
+        margin: 2% 1%;
         flex-basis: 30%;
         text-align: center;
     }
 
     .recently-played-container {
-        border: 1px dotted lightgreen;
+        height: 90vh;
+        width: 100%;
+        border: 1px dotted wheat;
         margin: 2% 1%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        overflow-y: scroll;
+        background-color: indigo;
     }
 
     h1 {
         margin: 2% 1%;
+        background-color: black;
     }
+
+    .card {
+        border: 1px dashed indigo;
+        display: flex;
+        flex-direction: column;
+        margin: 1% auto;
+    }
+
+    .card-title, 
+    .card-subtitle {
+        display: inline;
+        border: 1px solid mediumaquamarine;
+        text-align: center;
+    }
+
+    .card-image {
+        height: 18vh;
+        width: 40vw;
+        border: 1px solid red;
+        background-image: url("http://placekitten.com/300/300");
+        background-size: cover;
+    }
+
 
     /* FOOTER STUFF */
     footer {
+        background-color: darkslategray;
+    }
+}
+
+    .footer-container {
         height: 10vh;
         width: 100vw;
         background-color: darkslategray;
-        bottom: 0;
     }
-}
 
 
 /* END IPHONE 12/13 PRO MAX (428x926) */
