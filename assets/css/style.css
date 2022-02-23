@@ -4,6 +4,7 @@
 	margin: 0;
 	box-sizing: border-box;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 /* reset ends here */
 
@@ -49,17 +50,55 @@ aside {
 }
 
 .aside-icon {
-    border: 1px dotted white;
-    width: 80%;
-    height: 10%;
+    /* border: 1px dotted white; */
+    width: 33px;
+    height: 33px;
     margin: 20%;
+}
+
+#spotify-logo-small {
+    background-image: url("../img/logo-small.svg");
+    background-size: cover;
+}
+
+#home-logo {
+    background-image: url("../img/home.svg");
+    background-size: cover;
+}
+
+#search-logo {
+    background-image: url("../img/search.svg");
+    background-size: cover;
+}
+
+#library-logo {
+    background-image: url("../img/libreria.svg");
+    background-size: cover;
+}
+
+#downloads-logo {
+    background-image: url("../img/download.svg");
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    align-self: center;
+}
+
+#user-logo {
+    background-image: url("../img/profile.svg");
+    background-size: cover;
+}
+
+.aside-icon#user-logo {
+    background-color: grey;
+    border-radius: 50%;
 }
 
 /* MAIN STUFF */
 main {
     height: 90vh;
     width: 90%;
-    background-color: royalblue;
+    background-color: #141922;
     display: flex;
     overflow-y: scroll;
     flex-flow: row wrap;
@@ -68,7 +107,7 @@ main {
 header {
     height: 10vh;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #080b12;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -76,7 +115,10 @@ header {
 
 button.upgrade {
     margin: 8% 1%;
-    background-color: black;
+    background-color: #080b12;
+    padding: 1em 3em;
+    border-radius: 25px;
+    text-transform: uppercase;
 }
 
 .genres-nav {
@@ -86,6 +128,7 @@ button.upgrade {
 .genres-nav > ul {
     width: 100%;
     border: 1px dashed white;
+    background-color: #141922;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,8 +139,12 @@ button.upgrade {
     border: 1px solid orange;
     display: inline;
     margin: 2% 1%;
-    flex-basis: 30%;
+    flex-basis: 20%;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: #76787d;
 }
 
 .recently-played-container,
@@ -112,13 +159,14 @@ button.upgrade {
     align-items: flex-start;
     justify-content: space-between;
     overflow-y: scroll;
-    background-color: indigo;
+    background-color: #141922;
 }
 
 h1 {
     /* margin: 2% 1%; */
-    background-color: black;
+    background-color: #141922;
     width: 100%;
+    font-size: 1.5em;
 }
 
 .card {
@@ -136,6 +184,15 @@ h1 {
     border: 1px solid mediumaquamarine;
     text-align: center;
     width: 170px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.card-subtitle {
+    color: #797b80;
 }
 
 .card-image {
