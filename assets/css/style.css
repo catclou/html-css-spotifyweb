@@ -223,7 +223,7 @@ footer {
     width: 100vw;
     background-color: darkslategray;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-nav-left,
@@ -238,6 +238,10 @@ footer {
     justify-content: space-around;
 }
 
+.currently-playing-artist {
+    font-weight: bolder;
+}
+
 .footer-nav-center,
 .footer-nav-right {
     flex-direction: column;
@@ -249,18 +253,35 @@ footer {
 .currently-playing-actions {
     border: 1px solid darkorange;
     margin: 15% 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .currently-playing-img {
     width: 30%;
 }
 
+.currently-playing-img>img {
+    width: 100%;
+}
+
 .currently-playing-info {
     width: 50%;
 }
 
+.playing-track, 
+.playing-name {
+    font-size: 0.8em;
+    color: #7d7d7d;
+}
+
 .currently-playing-actions {
     width: 20%;
+}
+
+.fa-heart, .fa-folder {
+    color: #7d7d7d;
 }
 
 .player-options,
