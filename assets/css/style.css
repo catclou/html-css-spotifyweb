@@ -506,14 +506,62 @@ h1 {
     }
 
     .ipad-aside-icon-bottom {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         width: 100%;
         height: 40%;
         display: flex;
         flex-flow: column wrap;
-        align-content: center;
+        /* align-content: center; */
         justify-content: end;
     }
+
+    .row-install-app,
+    .john-doe {
+        /* border: 1px solid darkolivegreen; */
+        display: flex;
+        align-items: center;
+        margin: 10px 5px;
+    }
+
+    #ipad-downloads-logo {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        /* border: 1px solid yellow; */
+        background-image: url("../img/download.svg");
+    }
+
+    #ipad-installa-app {
+        margin-left: 5px;
+        color: grey;
+    }
+
+    #come-la-chiamo {
+        border: 1px solid grey;
+        margin: 0 5px;
+    }
+
+    #ipad-user-logo-background {
+        background-color: #5a5a5a;
+        border-radius: 50%;
+    }
+
+    #ipad-user-logo {
+        display: flex;
+        width: 33px;
+        height: 33px;
+        background-image: url("../img/profile.svg");
+        background-size: cover;
+        /* border: 1px solid yellow; */
+        border-radius: 50%;
+    }
+
+    #ipad-john-doe {
+        margin-left: 5px;
+        font-weight: bolder;
+    }
+
+
 
 }
 
