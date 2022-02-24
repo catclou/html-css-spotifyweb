@@ -20,7 +20,7 @@
     flex-wrap: wrap;
 }
 
-/* ASIDE STUFF */
+/* IPHONE ASIDE STUFF */
 aside {
     height: 90vh;
     width: 10%;
@@ -93,7 +93,11 @@ aside {
     border-radius: 50%;
 }
 
-/* MAIN STUFF */
+.bigger-aside {
+    display: none;
+}
+
+/* IPHONE MAIN STUFF */
 main {
     height: 90vh;
     width: 90%;
@@ -207,7 +211,7 @@ h1 {
 }
 
 
-/* FOOTER STUFF */
+/* IPHONE FOOTER STUFF */
 
 .footer-container {
     height: 93px;
@@ -350,3 +354,116 @@ h1 {
 }
 
 /* END IPHONE 12/13 PRO MAX (428x926) */
+
+
+/* START IPAD (810X1080) */
+
+@media screen and (min-width: 810px) {
+
+    /* IPAD ASIDE STUFF */
+    aside {
+        height: 90vh;
+        width: 20%;
+    }
+
+    main {
+    height: 90vh;
+    width: 80%;
+    }
+
+    .aside-icon-top {
+        /* border: 1px dotted orange; */
+    }
+
+    #spotify-logo-small,
+    #home-logo,
+    #search-logo,
+    #library-logo {
+        display: none;
+    }
+
+    .bigger-aside {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        width: 90%;
+        /* flex-basis: 20%; */
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+    }
+
+    .nav-list-bigger-aside {
+        display: flex;
+        width: 100%;
+        /* border: 1px solid magenta; */
+    }
+
+    .bigger-aside-li {
+        display: flex;
+    }
+
+    .bigger-aside-li-icon {
+        display: flex;
+        height: 100%;
+        width: 1.5em;
+        /* border: 1px solid yellow; */
+    }
+
+    .bigger-aside-li-text {
+        align-self: center;
+        text-align: center;
+        margin-left: 10px;
+        color: grey;
+    }
+
+    #bigger-home {
+        /* width: 20%; */
+        display: flex;
+    }
+
+    .crea-playlist-row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        /* border: 1px solid salmon; */
+    }
+
+    .crea-playlist-icon {
+        height: 30px;
+        width: 30px;
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 30px;
+        font-size: 1.5em;
+        color: black;
+    }
+
+    #new-playlist {
+        margin-left: 5px;
+        color: grey;
+    }
+
+    .nav-li-playlist {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid yellow; */
+        height: 250px;
+        justify-content: space-around;
+        margin-top: 10px;
+        color: grey;
+    }
+
+    #uppercase-playlist {
+        text-transform: uppercase;
+        color: grey;
+    }
+
+    .playlist-name {
+        color: grey;
+    }
+
+}
+
+/* END IPAD (810X1080) */
