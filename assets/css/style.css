@@ -386,7 +386,6 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
     }
 
     #spotify-logo-small,
@@ -405,6 +404,10 @@ h1 {
         /* flex-basis: 20%; */
         justify-content: space-around;
         /* flex-wrap: wrap; */
+    }
+
+    .logo-bigger-aside {
+        width: 80%;
     }
 
     .nav-list-bigger-aside {
