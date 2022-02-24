@@ -49,6 +49,10 @@ aside {
     justify-content: end;
 }
 
+.nav-li-playlist {
+    display: none;
+}
+
 .aside-icon {
     width: 33px;
     height: 33px;
