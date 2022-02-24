@@ -351,6 +351,10 @@ h1 {
     justify-content: space-between;
 }
 
+.desktop-other-options {
+        display: none;
+    }
+
 .volume-bar-background {
     background-color: #5a5a5a;
     width: 50%;
@@ -564,8 +568,53 @@ h1 {
         font-weight: bolder;
     }
 
+    /* IPAD FOOTER STUFF  */
+    .currently-playing-img > img {
+        width: 80%;
+    }
 
+    .desktop-other-options {
+        display: none;
+    }
 
 }
 
 /* END IPAD (810X1080) */
+
+/* START DESKTOP */
+
+@media screen and (min-width: 1130px) {
+    
+    .currently-playing-img > img {
+        width: 80%;
+    }
+
+    .footer-container {
+        height: 93px;
+        width: 98.8vw;
+        background-color: #282828;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav-left {
+        flex-basis: 20%;
+    }
+
+    .other-options {
+        display: none;
+    }
+
+    .desktop-other-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer-nav-right {
+        flex-basis: 20%;
+    }
+
+}
+
+/* END DESKTOP */
