@@ -135,7 +135,7 @@ button.upgrade {
 
 .genres-nav > ul > li {
     list-style: none;
-    /* border: 1px solid orange; */
+    /* border-bottom: 1px solid orange; */
     display: inline;
     margin: 2% 1%;
     flex-basis: 20%;
@@ -277,7 +277,7 @@ h1 {
     flex-basis: 35%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -323,6 +323,7 @@ h1 {
 
 .real-time-progress {
     border: 2px solid #c1c1c1;
+    background-color: greenyellow;
     width: 25%;
     border-radius: 10px;
 }
